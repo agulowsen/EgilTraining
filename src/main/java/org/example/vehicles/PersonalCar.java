@@ -10,7 +10,12 @@ public class PersonalCar extends Car implements DealerSellable, PrivatelySellabl
     }
 
     @Override
-    public int getPrice() {
+    public int getValue() {
+        return 0;
+    }
+
+    @Override
+    public int getSellPrice() {
         return 0;
     }
 

@@ -36,7 +36,17 @@ public class Airplane extends Vehicle implements Flyable, Buyable, PrivatelySell
     }
 
     @Override
-    public int getPrice() {
+    public int getValue() {
+        return 0;
+    }
+
+    @Override
+    public int getSellPrice() {
+        return 0;
+    }
+
+    @Override
+    public int getBuyPrice() {
         return 0;
     }
 

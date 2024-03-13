@@ -1,12 +1,13 @@
-package org.example.vehicles;
+package org.example.foods;
 
 import org.example.interfaces.financial.DealerSellable;
 
-public class Bike extends Vehicle implements DealerSellable {
-    public Bike(String make, String model, int year) {
-        super(make, model, year);
-    }
+public class Fruit extends Food implements DealerSellable {
 
+
+    public Fruit(String name) {
+        super(name);
+    }
     @Override
     public int getValue() {
         return 0;
@@ -19,6 +20,6 @@ public class Bike extends Vehicle implements DealerSellable {
 
     @Override
     public String getName() {
-        return make + " " + model;
+        return name;
     }
 }

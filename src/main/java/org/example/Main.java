@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.foods.Fruit;
 import org.example.interfaces.financial.DealerSellable;
 import org.example.interfaces.financial.PrivatelySellable;
 import org.example.interfaces.financial.Sellable;
@@ -14,18 +15,22 @@ import org.example.vehicles.Vehicle;
 public class Main {
     public static void main(String[] args) {
         Vehicle airplane = new Airplane("Boeing", "747", 2011);
-        Car personalCar = GetCarBasedOnVIN("KJSLADJDKLSA");
+        Car personalCar = getCarBasedOnVIN("KJSLADJDKLSA");
         Car taxiCar = new Taxi("Mercedes", "EQC", 2022);
         Bike bike = new Bike("DBS", "SpeedPro", 2020);
 
-        Cake choco = new Cake("Chocolate");
-        Cake apple = new Cake("Apple");
+        Cake chocoCake = new Cake("Chocolate");
+        Cake appleCake = new Cake("Apple");
 
-        System.out.println(Cake.getCount());
+        Fruit apple = new Fruit("Apple");
+        sellToDealer(apple);
+
+
+
 
     }
 
-    private static Car GetCarBasedOnVIN(String kjsladjdklsa) {
+    private static Car getCarBasedOnVIN(String kjsladjdklsa) {
         return new PersonalCar("Nissan", "Micra", 1997);
     }
 

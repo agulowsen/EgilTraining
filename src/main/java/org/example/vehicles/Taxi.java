@@ -9,7 +9,12 @@ public class Taxi extends Car implements DealerSellable {
     }
 
     @Override
-    public int getPrice() {
+    public int getValue() {
+        return 0;
+    }
+
+    @Override
+    public int getSellPrice() {
         return 0;
     }
 

@@ -2,7 +2,8 @@ package org.example.interfaces.financial;
 
 public interface Sellable {
 
-    int getPrice();
+    int getValue();
+    int getSellPrice();
     String getName();
 
 }
