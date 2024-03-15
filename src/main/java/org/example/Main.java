@@ -1,10 +1,6 @@
 package org.example;
 
-import org.example.generics.CarPair;
-import org.example.generics.DriveableAndSellableVehiclePair;
-import org.example.generics.DriveableVehiclePair;
-import org.example.generics.Pair;
-import org.example.generics.VehiclePair;
+import org.example.generics.*;
 import org.example.interfaces.financial.DealerSellable;
 import org.example.interfaces.financial.PrivatelySellable;
 import org.example.interfaces.financial.Sellable;
@@ -20,7 +16,13 @@ public class Main {
     public static void main(String[] args) {
         //inheritanceAndInterfaces();
         //statics();
-        generics();
+        //generics();
+
+
+        Printer<Integer> printer1 = new Printer<>(11);
+        Printer<String> printer2 = new Printer<>("Egil");
+        printer1.print();
+        printer2.print();
 
 
     }
